@@ -15,10 +15,8 @@ $calendar-shadow: rgba($calendar-color, 0.25) 0 0 1em !default;
 .rdr-DateRange {
     display: block;
     box-sizing: border-box;
-    white-space: nowrap;
-    border-radius: 2px;
     background: $calendar-background;
-    box-shadow: $calendar-shadow;
+    text-align: center;
 
     .rdr-Calendar {
         box-shadow: none;
@@ -30,12 +28,9 @@ $calendar-shadow: rgba($calendar-color, 0.25) 0 0 1em !default;
     box-sizing: border-box;
     width: $calendar-width;
     padding: $calendar-padding;
-    white-space: normal;
     letter-spacing: 0;
     color: $calendar-color;
-    border-radius: 2px;
     background: $calendar-background;
-    box-shadow: $calendar-shadow;
 }
 
 .rdr-MonthAndYear-innerWrapper {
@@ -127,7 +122,8 @@ $calendar-shadow: rgba($calendar-color, 0.25) 0 0 1em !default;
     letter-spacing: initial;
     margin: $cell-margin;
     border-radius: 2px;
-
+    color: #777;
+    
     &.is-passive {
         cursor: normal;
         opacity: 0.4;
